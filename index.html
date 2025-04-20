@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الوعد السعودي - سجّل الآن</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>الوعد السعودي</h1>
+    <p>تبي المليون… خلال ٩٠ يوم؟ بدون رأس مال وبدون واسطة او سابق شهرة.</p>
+    <button onclick="document.getElementById('register').scrollIntoView({ behavior: 'smooth' });">
+      سجّل الآن
+    </button>
+  </header>
+
+  <section id="register">
+    <h2>سجّل في التحدي</h2>
+    <form action="https://formspree.io/f/manerngn" method="POST">
+      <label>الاسم الكامل
+        <input type="text" name="name" required>
+      </label>
+      <label>المدينة
+        <input type="text" name="city" required>
+      </label>
+      <label>العمر
+        <input type="number" name="age" required min="18">
+      </label>
+      <label>البريد الإلكتروني
+        <input type="email" name="_replyto" required>
+      </label>
+      <label>الجوال
+        <input type="tel" name="phone" required>
+      </label>
+      <label>الخبرات
+        <textarea name="experience" rows="3" required></textarea>
+      </label>
+      <label>ليش حابب تشارك؟ (حتى 1000 كلمة)
+        <textarea name="why" rows="6" maxlength="5000" required></textarea>
+      </label>
+      <button type="submit">سجّل الآن</button>
+    </form>
+  </section>
+
+  <footer>
+    برعاية منصة حكيمك <a href="https://hakeemak.io" target="_blank">hakeemak.io</a><br>
+    حصرياً على جاكو
+  </footer>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
